@@ -91,11 +91,13 @@ const GameController = (() => {
     let win = checkForWin();
     if (win === true) {
       gameover();
-    } else if (turnNumber === 8) {
-      gameover();
     } else {
       turnNumber++;
       changeHeader();
+    };
+
+    if (turnNumber === 9) {
+      gameover();
     };
   };
 
@@ -139,7 +141,7 @@ const GameController = (() => {
       winner = Player2;
     };
     let result = document.querySelector("#results");
-    if (turnNumber === 8) {
+    if (turnNumber === 9) {
       result.textContent = "It's a Tie!";
     } else {
       result.textContent = winner.name + " is the Winner!";

@@ -7,8 +7,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Tic Tac Toe</h1>
-  
+  <h1 id="header">Tic Tac Toe</h1>
+
+  <div id="board-container">
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+    <div class="slot"></div>
+  </div>
+
+  <div id="player-form-container">
+    <form class="player-form">
+      <h2>Player1 Name</h2>
+      <input type="text" class="form-field" name="name" placeholder="Name">
+    </form>
+
+    <form class="player-form">
+      <h2>Player2 Name</h2>
+      <input type="text" class="form-field" name="name" placeholder="Name">
+    </form>
+  </div>
+
+  <button id="start-game-button">Start Game</button>
+
+  <div id="gameover-container">
+    <div id="gameover-card">
+      <h2 id="results"></h2>
+      <button id="replay-button">Play Again?</button>
+    </div>
+  </div>
+
   <script src="tictactoe.js"></script>
 </body>
 </html>
